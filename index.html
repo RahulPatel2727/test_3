@@ -1,11 +1,15 @@
 <!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel = "stylesheet" href = "./style.css">
     <title>test 2</title> 
 </head>
 <body>
-    <!--Toolbox-->
+
+    
+
     <div class = "toolbox-cont">
         <div class="toolbox-priority-cont">
             <div class="lightpink color"></div>
@@ -14,15 +18,22 @@
             <div class="black color"></div>
         </div>
         <div class="action-btn-cont">
-            <div class="add-btn">
+            <!-- <div class="add-btn">
                 <i class="fa-solid fa-plus"></i>
             </div>
             <div class="remove-btn">
                 <i class="fa-solid fa-trash"></i>
+            </div> -->
+            <div class="add-btn">
+                <ion-icon id="add" name="add-outline" class="fa-solid fa-plus"></ion-icon>
+
+            </div>
+            <div class="remove-btn">
+                <ion-icon id="del" name="trash-outline" class="fa-solid fa-trash"></ion-icon>
+                <!-- <i class="fa-solid fa-trash"></i> -->
             </div>
         </div>
     </div>
-    <!--Main Container-->
     <div class="main-cont">
         <div class="ticket-cont">
             <div class = "ticket-color"></div>
@@ -35,7 +46,7 @@
     </div> 
 
     <div class="modal-cont">
-        <textarea spellcheck = "false" class = "textarea-cont" placeholder="Enter your ticket task..."></textarea>
+        <textarea spellcheck = "false" class = "textarea-cont" placeholder="enter your task..."></textarea>
         <div class="priority-colors-cont">
             <div class="lightpink priority-color"></div>
             <div class="lightblue priority-color"></div>
